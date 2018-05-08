@@ -1,0 +1,25 @@
+生成一组数据列表：
+data=[randint(0,20) for _ in range(30)]
+
+任务：需要统计列表中元素出现次数最高的三个元素
+解决方法：
+①常规：
+将需要统计的列表用字典实现，并且使用循环的形式进行统计。
+源代码：
+from random import randint 
+data=[randint(0,20） for _ in range(30)]
+c=dict.fromkeys(data,0)#统计列表中的数据形式，一定为字典，将data列表变为字典，并初始化。
+for x in data:c[x]+=1#进行统计
+
+②使用Counter，将序列传入Counter的构造器，得到Counter对象是元素频度的字典：
+c2=Counter(data)
+
+Counter.most_common(n)方法得到频度最高的n个元素的列表：
+c2.counter_most()
+
+源代码：
+from random import randint 
+data=[randint(0,20） for _ in range(30)]
+from collections import counter
+c2=Counter(data)	
+c2.counter_most(3)#频率出现次数最高的三个元素

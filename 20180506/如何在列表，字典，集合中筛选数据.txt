@@ -1,0 +1,4 @@
+如何在列表，字典，集合中根据条件筛选数据：
+1、列表：filter函数：filter（lambda x :x>=0（条件）,data），列表解释：[x for x in data if x>=0]
+2、字典：字典解释：{k:v for k,v in d.iteritems() if v>90}，字典：d={1:2,2:3,3:32}
+3、集合：结合解释：{x for x in s if x%3==0} 集合：s={1,2,3,4}

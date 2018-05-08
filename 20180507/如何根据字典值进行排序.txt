@@ -1,0 +1,9 @@
+问题：一个字典(d)，根据里面的值，计算排名：
+
+解决方案：使用内置函数sorted
+
+①利用zip将字典数据转化为元组，利用元组再排序：
+d1=zip(d.values,d.keys())
+sorted(d1)
+②传递sorted函数的key参数:
+sorted(d.items(),key=lambda x:x[1])

@@ -1,0 +1,13 @@
+比如：学生信息系统中数据的固定格式：
+（名字，年龄，性别，邮箱地址，...）
+访问时，我们用到的是引索（index），大量减低程序的可读性。
+s=（'Jim',22,'male','jim232@gmail.com')
+比如我要是想读出名字：需要s[0]，要是有很多的学生的话，那就很麻烦。
+ 解决的方案：
+1、定义类似与其他语言的枚举类型，也就是定义一系列的数值常量：
+NAME,AGE,SEX,EMAIL=range(4)这样把1,2,3,4一次赋值给四个变量，然后可以直接用s[NAME]来表示名字这个值。 
+
+2、使用标准库中collections.namedtuple来代替内置tuple
+  Student=namedtuple('Student',['name','age','sex','mail,]
+  s=Student('Jim',15,'male','jim@gmail.com')
+  

@@ -1,0 +1,33 @@
+HTML（Hypertext Markuo Language）：超文本标记语言
+
+特点：
+1、不需要编译，直接由浏览器执行
+2、HTML	文件是一个文本文件
+3、HTML文件必须使用html或htm为文件后缀
+4、HTML大小写不敏感，HTML和html一样
+
+HTML基本结构：
+头部文件+内容
+
+
+
+HTML标签属性：
+
+语法：<标签名 属性名1=“属性值” 属性名2=“属性值”...>..</标签名>
+
+
+
+DOCTYPE 文档类型声明
+
+<!DOCTYPE>声明必须放在HTML文档的第一行，也不是HTML标签
+
+网页编码设置：
+
+问题：网页出现乱码
+
+solution：
+
+在<head></head>标签之间添加：
+<meta http-equiv="Content" contect="text/html;charse=utf-8"/>
+
+注意：utf-8、GB2312、gbk等编码

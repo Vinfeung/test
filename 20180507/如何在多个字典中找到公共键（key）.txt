@@ -1,0 +1,20 @@
+问题：多个字典，找出相同的键
+
+
+方法：
+方法①:使用字典的viewkeys（）方法，得到一个字典keys的集合。再利用交集得到公共姐
+
+
+s1,s2,s3为三个字典，如果字典数不是很多的话，可以使用：
+s1.viewkeys()&s2.viewkeys()&s3.viewkeys()得到公共值,这个公共值为集合（set）
+
+方法②：使用map函数，得到所有字典的keys的集合。使用reduce函数，取得所有字典的keys的集合的交集。
+map(dict.viewkeys(),[s1,s2,s3,])
+reduce(lambda a,b:a&b,mmap(dict.viewkeys(),[s1,s2,s3,]))
+
+
+reduce()函数语法：
+reduce(function,iterable,initializer)
+eg:
+
+reduce(lambda x,y；x+y,[1,2,3,4,5,6])#计算列表和的结果

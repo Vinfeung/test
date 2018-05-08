@@ -1,0 +1,14 @@
+问题描述：
+如何实现用户的浏览历史记录的功能
+
+解决方案:使用容量为n的队列（deque）储存历史记录
+使用标准库collections中的deque，它是一个双端循环队列。
+
+使用pickle将队列对象存入文件，再次运行程序时就将其导入。
+产生一个队列：
+q=deque([],5)#空间为5
+q.append()#添加元素。
+import pick 
+pickle.dump(q,open('history','w'))#使用pickle将队列对象存入文件
+
+q2=pickle.load(open('history'))

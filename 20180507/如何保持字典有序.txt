@@ -1,0 +1,4 @@
+问题：利用字典存储数据信息，需要按照一定的顺序（字典无顺序）进行打印
+
+solution：
+使用collections.OrderedDict:以OrderedDict代替内置字典Dic，依次得到有顺序的列表。

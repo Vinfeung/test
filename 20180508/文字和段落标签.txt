@@ -1,0 +1,42 @@
+标题标签：<h1></h1>~<h6></h6>
+
+段落标签：<p></p>
+
+align对齐属性值：
+   left：左对齐内容
+   right:右对齐内容
+   center：居中对齐内容
+   justify:对行进行伸展，使得每行都有相等的长度。
+
+换行标签：<br/>
+
+
+
+水平线：<hr/>
+属性与描述：
+width:设置水平线宽度，可以像素或百分比
+color：设置水平线颜色
+align：设置水平线居中对齐
+noshade:设置水平线无阴影
+eg:<hr width="80%" color="#6666" align="left"/>
+
+
+
+文本描述标签：
+格式：<i>文本内容</i>
+文字斜体：<i></i>、<em></em>
+加粗：<b></b>、<strong></strong>
+下标;<sub></sub>
+上标：<sup></sup>
+下划线：<ins></ins>
+删除线：<del></del>
+
+
+特殊符号需要使用代码来表示，不然的话显示不出来：
+&lt:<
+&gt:>
+&reg:R
+&trade:TM 商标
+&nbsp:Space 不断行的空白
+注意使用分号隔开。
+例如需要显示<b>:<p>&lt;b&lt;
