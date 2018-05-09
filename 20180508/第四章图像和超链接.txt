@@ -1,0 +1,93 @@
+1、图像标签：
+语法：<img src=" " alt="'>
+
+img属性：
+Src:URL,显示图像的URL
+alt:文字，图像代替文本
+
+height：数值（单位：px）和百分比  图像的高
+width：数值和百分比   图像的宽
+ 
+height、width 不定义显示原图
+其中：
+alt的作用：当出现这些情况时，网速太慢，src属性中的错误，浏览器禁用图片，用户无法查看图像，alt属性可以代替图像显示在浏览器中的内容。
+
+eg:
+<!DOCTYPE html>
+<html>
+<head>
+	<title>图像和超级链接</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+	<img src="E:/1.jpg" alt="html基础课程" width="53%" height="60%"/><!--在同一级-->
+	<br/>
+
+	<h2>html基础课程</h2>
+	<h2>javascript入门课程</h2>
+
+</body>
+</html> 
+
+
+注意：要是图片加载不出来就换一张或者改格式png
+图片(名为1.jpg)路径的相对路径和绝对路径：
+
+如果和网页本地存储的地址在同一级src，那么直接写文件名字，如上面的例子。
+
+如果是在这个网页的上一级，那么则是<img src="../1.jpg"/>
+
+如果是其目录的下一级，<img src="/文件名/1.jpg"/>
+
+2、超链接
+语法：
+    <a href="">内容</a>
+
+href:链接地址，可以是内部链接也可以是外部链接。
+
+https://github.com/Vinfeung/web-newbie.git
+
+属性与描述：
+href：链接地址，空链接用#表示
+target：链接的目标窗口，_self（当前窗口打开）、_blank（在新窗口打开 ）、_top、_parent
+title：链接提示文字
+name：链接命名
+
+
+3、页内跳转超链接标签：
+定义锚：
+<a href="#锚名1">目录1</a>
+<a href="#锚名1">目录1</a>
+<a href="..." name="锚名1">内容</a>
+...
+...
+<a href="..." name="锚名2">内容</a>
+...
+...
+
+
+
+
+
+步骤：
+1、定义锚的位置和锚名
+2、设置寻找锚的链接
+eg:
+<a href="#html"><p>HTML课程</p></a>
+...
+...
+<a name="HTML课程"><h2>HTML课程</h2></a><!--以文字作为跳转开始，如果想从图片开始的话只需要换成图片就好>
+
+
+4、跳转到也外的超链接：
+定义锚（不同页面）
+网页1：<a href="网页名称#锚名">...</a>
+网页2：<a name="锚名">...</a>
+
+
+5、邮件链接：<a href="mailto:邮箱地址">....</a>
+eg:<a href="mailto:1191970034@qq.com"><h2>意见反馈<h2></a>
+
+
+6、文件下载：
+<a href="文件的位置">....</a>
