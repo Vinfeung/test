@@ -1,0 +1,31 @@
+CSS样式规则：
+CSS规则由两部分构成：选择器，声明。
+h1(选择器）{color（属性）：red（值）;font-size（属性）:18px（值）;}
+
+2、如何引用CSS样式：
+行内样式（内联样式）：
+<p style="color:red:">内容</p>；开始标签内style，HTML文件内
+
+内部样式表（嵌入样式）:把css样式代码写在：
+<style type="text/css">
+  样式...
+</style>
+
+注意：<style>要放在<head>标签内
+
+外部样式表，把CSS样式代码写在一个单独的一个文件中，<head>中<link>引用，CSS样式文件，与HTML文件分离
+
+扩展名：CSS文件名.CSS
+引入外部文件：
+<link href="XX.css" rel="stylesheet" type="text/css"/>
+
+导入式:@import "外部CSS样式"/url（外部CSS样式）
+在style标签：
+在样式代码最开始初，CSS样式文件，与html文件分离。读取完HTML文件之后加载
+
+3、使用链入外部样式的好处;
+CSS和HTML分离，多文件可以使用同一个样式文件，多文件引用同一个css文件，css只需要下载一次。
+
+4、优先级：
+行内样式>内部样式>外部样式
+说明：链入外部样式表与内部样式表之间的优先级取决于所处位置的先后；最后定义的优先级最高（就近原则）

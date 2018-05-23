@@ -1,0 +1,46 @@
+1、CSS样式命名规则：
+采用英文字母、数字以及“-”和“_”命名
+
+以小写字母开头，不能以数字和“-”和“_”开头
+
+命名形式：单字，连字符，下划线和驼峰（除第一个单词外，其他手写字母大写）
+单字：.special{...}
+驼峰：.mainTitle{...}
+采用“-”连接符：main-title{...}
+采用“_”下划线：.main_title{...}
+
+使用有意义命名
+
+2、常用的CSS样式命名：
+1）页面结构：
+页头：header
+页面主体：main
+页尾：footer
+内容：content/container
+容器：container
+
+导航：nav
+侧栏：sidebar 
+栏目：column
+页面外围控制：wrapper
+左右中：left right center
+
+2）导航：
+导航：nav
+主导航：mainnav
+子导航：subnav
+顶导航：topnav
+边导航：sidebar
+右导航：rightnav
+左导航：leftnav
+菜单：menu
+子菜单：submenu
+摘要：summary
+
+3）功能
+标志：logo  广告：banner  登录：login 登录条：loginbar
+标题：title  功能区：shop  注册：register 搜索：search
+
+4、ID和class的使用：
+ID不要滥用，谨慎使用
+适当使用class

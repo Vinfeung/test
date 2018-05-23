@@ -1,0 +1,23 @@
+1、<select>标签属性：
+属性
+name：设置下拉菜单和列表的名称
+multiple：设置多个选项
+size：设置列表中可见选项的数目
+
+2、<option>标签属性
+
+selected：设置选项初始选中的状态 
+value：定义送往服务器的选项值
+
+3、多行文本域<textarea>
+属性：
+name：设置文本区的名称
+placeholder：设置描述文本区域预期值
+rows:设置文本区内的可见行数。
+cols:设置文本区内的可见宽度。
+
+4、input标签：
+		<tr>
+			<td align="right">爱好：</td>
+			<td align="left">读书<input type="checkbox" name="dx1" value="read" checked/>唱歌<input type="checkbox" name="dx2" value="sing"/>跳舞<input type="che" name="dx3" value="dance"/ ></td>
+		</tr>

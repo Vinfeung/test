@@ -1,0 +1,22 @@
+1、盒子模型计算：
+IE盒子模型和标准盒子模型：
+①如果没有Doctype文档类型声明，各浏览器按照自己的方式解释。
+
+②如果有Doctype文档类型声明，各浏览器按照标准盒子模型解释。
+
+2、盒子模型的应用：
+inline：元素将显示为内联元素（span标签的，没有换行符，有空隙），元素前后没有换行符；
+
+block：元素显示为块级元素（div标签的，有换行符，没有空隙），元素前后会带有换行符。
+
+inline-block：行内块元素，元素呈现为inline，具有block相应特性
+
+none：此元素不会被显示。
+
+注意：
+①相应内联元素（span标签的）及使用display：inline设置成内联元素的元素width和height属性无效。
+   水平方向margin-left（right）、padding-left（right）有效而垂直方向margin-top（bottom）、padding-right（left）无效
+
+②块级元素（div标签的）及使用display：block设置成块级元素的元素width、height、margin、padding属性都生效。
+
+

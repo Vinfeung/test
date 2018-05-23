@@ -1,0 +1,53 @@
+1、CSS选择器：
+标签选择器，类选择器，ID选择器，全局选择器，群组选择器，后代选择器
+
+注意：通过标签选择器设置格式，那使用该标签的内容都引用该样式。
+
+2、类选择器：
+为HTML标签添加class属性：
+<h1 class="red">内容1<h1>
+<p>内容2<p>
+<p class="red">内容3</p>
+
+通过类选择器来为具有此class属性的元素设置CSS样式：
+.red{color:red:}
+
+可对不同类型元素的同一个名称的类选择器设置不同的样式规则：
+p.red{font-size:50px;}
+h1.red{font-size:20px;}
+
+
+类选择器：同一个元素可以设置多个类，之间有空格隔开：
+<p class="red fsize">内容2</p>
+
+3、ID选择器
+为HTML标签添加ID属性：
+<h1>内容1</h1>
+<p id="p1">内容2</p>
+<p id="p2">内容3</p>
+
+通过ID选择器来为具有此ID的元素设置CSS规则：
+#p1{color:red;}
+#p2{color:bule;}
+
+4、群组选择器：
+集体统一设置样式：
+p,h1,h2,h3,h4{font-size:30px;}
+注意：class和ID的内容是区分大小写的。
+
+5、全局选择器
+所有标签设置样式：
+*{color:blue;...;}
+
+6、后代选择器：
+<em>CSS层叠样式</em>
+<p><em>CSS</em>层叠样式</p>
+<p><em>CSS</em>层叠样式</p>
+
+使用后代选择器设置，之间用空格隔开：
+p em{font-size:40px;}
+
+eg:
+p a em{...}/*p标签中a标签中的em*/
+#p1 em{...}/*id为p1标签中a标签中的em*/
+p.red a em{...}/*clas为red的p标签中的a标签中的em*/

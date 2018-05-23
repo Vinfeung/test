@@ -1,0 +1,45 @@
+1、<form>标签
+语法：
+<form action="" method="" name="" ...>
+  表单元素
+</form>
+
+
+2、<form>标签：
+action：URL，提交表单时向何处发送表单数据
+method：get、post，设置表单以何种方式发送到指定的页面 
+name:form_name 表单的名称
+target _blank（新的页面打开）、_self、_parent、_top：在何处看看action URL
+enctype:application/x-www-form-urlencoded/multipart/form-data/text/plain:在发送表单数据之前如何对其进行编码
+
+3、GET：
+       使用URL传递参数
+       对所发信息的数量也有限制
+       一般用于信息获取
+
+   POST：
+       表单数据作为HTTP请求体的一部分
+        对所发送信息的数量无限制
+       一般用于修改服务器上的资源
+
+4、总结
+标签与描述：
+<input>:表单输入标签
+<select>菜单和列表标签
+<option>菜单和列表项目标签
+<textarea>文字域标签
+<optgroup>菜单和列表项目分组标签
+
+<input>标签
+语法：<input type=“类型属性” name=“名称”.../>
+Type:
+text:文字域，（Name，Maxlength，Size，value，placeholder）
+password：密码域
+file：文件域
+checkbox;复选域
+radio：单选域
+Button：按钮
+Submit：提交按钮
+Reset：重置按钮
+Hidden：隐藏域
+image：图像域（配合src使用）

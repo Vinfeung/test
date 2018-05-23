@@ -1,0 +1,19 @@
+1、如何引用CSS样式：
+行内样式（内联样式）：
+在开始标签内添加style样式属性，<p style="color:red;">内容</p>
+
+内部样式表（嵌入样式）:<style>要放在<head>标签之间
+<style type="text/css">
+样式...
+</style>
+
+外部样式表（Link链入）:
+外部样式表，把CSS样式代码写在独立的一个文件中，扩展名：CSS文件.CSS 
+引入外部文件：<link href="XX.css" rel="stylesheet" type="text/css"/>
+
+导入式:（@import "外部CSS样式"）
+
+2、CSS选择器
+
+标签选择器、类选择器（在标签中增加 class=" "）、ID选择器（在标签中增加 id=" "）、全局选择器（*）、群组选择器、后代选择器
+

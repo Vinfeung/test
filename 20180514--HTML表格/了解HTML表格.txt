@@ -1,0 +1,28 @@
+1、带结构的表格
+<table> 
+  <caption>...</caption><!--表格名称-->
+  <thead>
+    <tr>
+     <th>表头</th><!--已经加粗-->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     <th>主体</th>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+     <th>脚注</th>
+    </tr>
+  </tfoot>
+</table>
+
+
+注意：<thead><tbody><tfoot>标签不能影响布局。
+
+
+
+
+
+</table>

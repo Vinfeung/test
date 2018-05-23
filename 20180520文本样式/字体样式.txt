@@ -1,0 +1,13 @@
+1、font-size文字大小：
+默认字体大小：16px(medium)
+相对值大小：
+in（inch，英寸，1英寸=2.54cm）
+pt:磅，72磅=1英寸
+pc:Pica,1pc=12pt
+
+属性值：xx-small:9px;x-small:11px;small:13px;medium:16px;large:19px;x-large:23px;xx-large:28px
+
+
+
+绝对值：px和em/%,会随分辨率的改变而改变。其中em和%都是针对父元素的
+
